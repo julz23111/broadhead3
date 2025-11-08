@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer | Broadhead Buddy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="disclaimer-page">
+  <header>
+    <h1>BROADHEAD BUDDY</h1>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav class="nav" role="navigation">
+      <ul id="primary-nav" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Disclaimer &amp; Limitation of Liability</h2>
+    <p>Please review before use.</p>
+  </section>
+
+  <main class="legal-content">
+    <div class="legal-container">
+      <h3>Condition of Retrieved Broadheads</h3>
+      <p>Broadheads lodged in trees or other surfaces are considered damaged prior to removal.</p>
+
+      <h3>Purpose and Use</h3>
+      <p>The <strong>Broadhead Buddy™</strong> assists with retrieval only and does not guarantee the condition or future usability of any broadhead.</p>
+
+      <h3>User Responsibility</h3>
+      <p>The owner is solely responsible for determining whether an extracted broadhead is safe to reuse. Users assume full responsibility for proper use, including adherence to instructions and warnings.</p>
+
+      <h3>Limitation of Liability</h3>
+      <p><strong>JEBCO LLC</strong> is not liable for any injury, damage, or loss—including harm to persons, property, or equipment—resulting from misuse, modification, or noncompliance. Liability limited to purchase price.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-icons">
+      <img src="assets/icons/bb.png" alt="Broadhead Buddy Logo" class="footer-icon">
+      <img src="assets/icons/vet.png" alt="Veteran Owned Badge" class="footer-icon">
+    </div>
+    <p>© 2025 Broadhead Buddy. All rights reserved.</p>
+    <a href="privacy.html" class="footer-link">Privacy Policy</a>
+  </footer>
+
+  <script defer src="js/script.js"></script>
+</body>
+</html>
