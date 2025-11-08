@@ -1,11 +1,19 @@
-const form = document.getElementById('contact-form');
-const statusEl = document.getElementById('form-status');
 
-if (form) {
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contact-form');
+  const statusEl = document.getElementById('form-status');
+  const button = form ? form.querySelector('button') : null;
+
+  if (!form || !button) return;
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     statusEl.textContent = '';
-    
+    button.disabled = true;
+    button.textContent = 'Sending...';
+
     const formData = new FormData(form);
     const payload = {
       name: formData.get('name')?.trim(),
@@ -16,6 +24,8 @@ if (form) {
 
     if (!payload.name || !payload.email || !payload.message) {
       statusEl.textContent = 'Please fill out name, email, and message.';
+      button.disabled = false;
+      button.textContent = 'Send Message';
       return;
     }
 
@@ -27,14 +37,18 @@ if (form) {
       });
 
       if (!res.ok) {
-        throw new Error('Request failed');
+        const errData = await res.json();
+        throw new Error(errData.error || 'Request failed');
       }
 
       form.reset();
       statusEl.textContent = 'Message sent! We’ll get back to you shortly.';
     } catch (err) {
-      console.error(err);
+      console.error('Email send error:', err);
       statusEl.textContent = 'There was a problem sending your message. Please try again.';
+    } finally {
+      button.disabled = false;
+      button.textContent = 'Send Message';
     }
   });
-}
+});
