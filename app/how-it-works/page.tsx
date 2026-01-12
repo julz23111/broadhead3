@@ -90,7 +90,7 @@ export default function HowItWorksPage() {
           <Step
             step="2"
             title="Engage"
-            img="/images/step-2.jpg"
+            img="/images/step2.jpg"
             description="Thread the coupler onto the exposed threads and align the sleeve slots with the broadhead blades."
           />
 
