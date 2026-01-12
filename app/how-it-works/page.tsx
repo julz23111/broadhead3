@@ -83,28 +83,28 @@ export default function HowItWorksPage() {
           <Step
             step="1"
             title="Ready"
-            img="/images/Step 1 Ready.jpg"
+            img="/images/step1.jpg"
             description="Unscrew the arrow shaft from the broadhead. Position the Broadhead Buddy™ so the extraction sleeve aligns with the blades."
           />
 
           <Step
             step="2"
             title="Engage"
-            img="/images/Step 2 Engage.jpg"
+            img="/images/step-2.jpg"
             description="Thread the coupler onto the exposed threads and align the sleeve slots with the broadhead blades."
           />
 
           <Step
             step="3"
             title="Extract"
-            img="/images/Step 3 Extract.jpeg"
+            img="/images/step3.jpeg"
             description="Hold the sleeve securely and apply controlled force to retract the broadhead safely from the target."
           />
 
           <Step
             step="4"
             title="Remove"
-            img="/images/Step 4 Remove.jpg"
+            img="/images/step4.jpg"
             description="Once loose, unthread the broadhead from the tool and inspect your recovered gear."
           />
         </div>
